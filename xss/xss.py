@@ -11,7 +11,7 @@ def parser():
         sys.exit()
     return options
 def payload(url):
-    with open("/root/Documents/file/xss.txt", 'r+') as file:
+    with open("file/xss.txt", 'r+') as file:
         lists = file.readlines()
         for payloads in lists:
             Furl = str(url)+str(payloads)
